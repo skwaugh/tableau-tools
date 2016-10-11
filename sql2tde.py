@@ -50,7 +50,7 @@ def printTableDefinition(tableDef):
 
 def getODBCCursor():
     try:
-        cnxn_str = "DSN=NetSuite;UID=swaugh@luxbp.com;PWD=Luxury2015"
+        cnxn_str = "DSN=example_dsn;UID=sawyer@example.com;PWD=your_password"
         cnxn = pyodbc.connect(cnxn_str)
         cursor = cnxn.cursor()
         return cursor, cnxn
